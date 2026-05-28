@@ -1,0 +1,268 @@
+/* =========================================================================
+   Luana Macedo — Identidade Visual
+   Tokens: cores, tipografia, espaçamento, sombras, raios.
+   ========================================================================= */
+
+/* ----- Fontes ------------------------------------------------------------ */
+/* Ezzo é a fonte primária oficial da marca — dois pesos recebidos:
+   Thin (~200) e BoldAtl (~700). Pesos intermediários usam fallback Manrope.
+   Photomark Signature ainda não foi recebida — substituída por Pinyon Script. */
+
+@font-face {
+  font-family: 'Ezzo';
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/Ezzo-Thin.woff') format('woff');
+}
+@font-face {
+  font-family: 'Ezzo';
+  font-weight: 300;  /* Thin também cobre Light visualmente */
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/Ezzo-Thin.woff') format('woff');
+}
+@font-face {
+  font-family: 'Ezzo';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/Ezzo-BoldAtl.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ezzo';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/Ezzo-BoldAtl.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Photomark Signature';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/PhotomarkSignature.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Pinyon+Script&display=swap');
+
+:root {
+  /* ---- Cores primárias ------------------------------------------------- */
+  --color-brown:        #6A4B36;   /* marrom assinatura / texto principal */
+  --color-off-white:    #F1F1F1;   /* fundo institucional                  */
+
+  /* ---- Cores secundárias (gama bege/areia) ----------------------------- */
+  --color-tan:          #A07D61;   /* marrom claro / acento médio          */
+  --color-sand:         #BFAC95;   /* areia / suporte                      */
+  --color-cream:        #EFE4D9;   /* creme / fundo suave                  */
+
+  /* ---- Neutros derivados ---------------------------------------------- */
+  --color-ink:          #2B1E14;   /* marrom muito escuro p/ texto crítico */
+  --color-paper:        #FBF8F4;   /* off-white mais quente que F1F1F1     */
+  --color-line:         #E3D8C9;   /* divisórias claras                    */
+  --color-muted:        #8A7563;   /* texto secundário                     */
+  --color-white:        #FFFFFF;
+
+  /* ---- Aliases semânticos --------------------------------------------- */
+  --bg:                 var(--color-paper);
+  --bg-alt:             var(--color-cream);
+  --bg-inverse:         var(--color-brown);
+  --fg:                 var(--color-brown);
+  --fg-1:               var(--color-ink);
+  --fg-2:               var(--color-muted);
+  --fg-on-dark:         var(--color-off-white);
+  --accent:             var(--color-tan);
+  --line:               var(--color-line);
+
+  /* ---- Tipografia ----------------------------------------------------- */
+  /* Ezzo é a família primária oficial (Thin + Bold recebidos do cliente).
+     Manrope fica como fallback para pesos intermediários não cobertos.
+     Photomark Signature ainda pendente — fallback Pinyon Script. */
+  --font-primary:   'Ezzo', 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display:   'Ezzo', 'Cormorant Garamond', Georgia, serif;
+  --font-editorial: 'Cormorant Garamond', Georgia, serif; /* italic editorial */
+  --font-script:    'Photomark Signature', 'Pinyon Script', cursive;
+  --font-mono:      ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* tracking: o brand é elegante / arejado. Letter-spacing largo em
+     títulos institucionais (caps), e neutro no corpo. */
+  --tracking-display: 0.16em;     /* títulos em caixa alta              */
+  --tracking-eyebrow: 0.22em;     /* eyebrow / código                   */
+  --tracking-body:    0.00em;
+
+  --leading-tight:    1.05;
+  --leading-snug:     1.25;
+  --leading-body:     1.55;
+
+  /* escala tipográfica */
+  --fs-12:  0.75rem;
+  --fs-13:  0.8125rem;
+  --fs-14:  0.875rem;
+  --fs-16:  1rem;
+  --fs-18:  1.125rem;
+  --fs-20:  1.25rem;
+  --fs-24:  1.5rem;
+  --fs-28:  1.75rem;
+  --fs-32:  2rem;
+  --fs-40:  2.5rem;
+  --fs-48:  3rem;
+  --fs-56:  3.5rem;
+  --fs-72:  4.5rem;
+
+  /* ---- Espaçamento (escala de 4) ------------------------------------- */
+  --sp-1:   4px;
+  --sp-2:   8px;
+  --sp-3:   12px;
+  --sp-4:   16px;
+  --sp-5:   24px;
+  --sp-6:   32px;
+  --sp-7:   48px;
+  --sp-8:   64px;
+  --sp-9:   96px;
+  --sp-10:  128px;
+
+  /* ---- Raios ---------------------------------------------------------- */
+  --radius-xs:  2px;
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  16px;
+  --radius-pill: 999px;
+
+  /* ---- Sombras (suaves, quase imperceptíveis) ------------------------ */
+  --shadow-sm:  0 1px 2px rgba(43, 30, 20, 0.06);
+  --shadow-md:  0 6px 18px rgba(43, 30, 20, 0.08);
+  --shadow-lg:  0 18px 40px rgba(43, 30, 20, 0.10);
+
+  /* ---- Bordas --------------------------------------------------------- */
+  --border-hairline: 1px solid var(--color-line);
+  --border-strong:   1px solid var(--color-brown);
+
+  /* ---- Easing / motion ------------------------------------------------ */
+  --ease-out:  cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:  140ms;
+  --dur-base:  260ms;
+  --dur-slow:  600ms;
+}
+
+/* =========================================================================
+   Estilos semânticos prontos para uso
+   ========================================================================= */
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-primary);
+  font-size: var(--fs-16);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ------ Headings (display, em caixa alta, espaçamento amplo) ------------ */
+.h-display, h1.display {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-tight);
+  color: var(--color-brown);
+}
+
+.h1, h1 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: var(--fs-40);
+  letter-spacing: var(--tracking-display);
+  text-transform: uppercase;
+  line-height: var(--leading-tight);
+  color: var(--color-brown);
+}
+
+.h2, h2 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: var(--fs-28);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: var(--leading-snug);
+  color: var(--color-brown);
+}
+
+.h3, h3 {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: var(--fs-20);
+  letter-spacing: 0.04em;
+  line-height: var(--leading-snug);
+  color: var(--color-brown);
+}
+
+/* ------ Display italic (uso editorial, frases curtas) ------------------- */
+.editorial {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3.2vw, 2.5rem);
+  line-height: 1.15;
+  color: var(--color-brown);
+  letter-spacing: 0;
+}
+
+/* ------ Script / assinatura ------------------------------------------- */
+.script {
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1;
+  color: var(--color-brown);
+  letter-spacing: 0;
+}
+
+/* ------ Eyebrow / código (small caps, tracking amplo) ----------------- */
+.eyebrow {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: var(--fs-12);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  color: var(--color-tan);
+}
+
+/* ------ Body ---------------------------------------------------------- */
+.body, p {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: var(--fs-16);
+  line-height: var(--leading-body);
+  color: var(--fg-1);
+}
+
+.body-lg { font-size: var(--fs-18); }
+.body-sm { font-size: var(--fs-14); }
+
+.caption {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: var(--fs-13);
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
+}
+
+/* ------ Links --------------------------------------------------------- */
+a {
+  color: var(--color-brown);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: opacity var(--dur-base) var(--ease-out);
+}
+a:hover { opacity: 0.65; }
+
+/* ------ Divisor ------------------------------------------------------- */
+.rule {
+  height: 1px;
+  width: 100%;
+  background: var(--color-line);
+  border: 0;
+}
