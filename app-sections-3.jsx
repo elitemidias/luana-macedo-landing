@@ -111,18 +111,18 @@ function InstaCTA() {
               No Instagram da Luana você vê o antes e depois de cada procedimento, bastidores do atendimento e dicas de cuidados.
             </p>
             <a
-              href="https://instagram.com/luanamacedo.micro"
+              href="https://instagram.com/luanamacedomicro"
               target="_blank"
               rel="noreferrer"
               className="btn insta-btn no-underline"
               style={{ marginTop: "var(--sp-6)", display: "inline-flex", alignItems: "center", gap: 10 }}
             >
               <InstagramIcon size={20} />
-              Seguir @luanamacedo.micro
+              Seguir @luanamacedomicro
             </a>
           </div>
           <div className="insta-cta-phone reveal">
-            <img src="assets/iphone-mockup.png" alt="Perfil do Instagram @luanamacedo.micro" />
+            <img src="assets/iphone-mockup.png" alt="Perfil do Instagram @luanamacedomicro" />
           </div>
         </div>
       </div>
@@ -136,9 +136,9 @@ function SocialStrip() {
     <div className="social-strip">
       <div className="container social-strip-inner">
         <span className="social-strip-label">Siga a Luana</span>
-        <a href="https://instagram.com/luanamacedo.micro" target="_blank" rel="noreferrer" className="social-strip-link no-underline">
+        <a href="https://instagram.com/luanamacedomicro" target="_blank" rel="noreferrer" className="social-strip-link no-underline">
           <InstagramIcon />
-          <span>@luanamacedo.micro</span>
+          <span>@luanamacedomicro</span>
         </a>
         <a href="https://wa.me/5521995365112?text=Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noreferrer" className="social-strip-link no-underline">
           <WhatsAppIcon />
@@ -173,8 +173,8 @@ function Footer() {
           <div>
             <h4>Falar com a Luana</h4>
             <div className="footer-social">
-              <a href="https://instagram.com/luanamacedo.micro" target="_blank" rel="noreferrer">
-                <InstagramIcon /> @luanamacedo.micro
+              <a href="https://instagram.com/luanamacedomicro" target="_blank" rel="noreferrer">
+                <InstagramIcon /> @luanamacedomicro
               </a>
               <a href="https://wa.me/5521995365112?text=Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20procedimentos" target="_blank" rel="noreferrer">
                 <WhatsAppIcon /> WhatsApp · Resposta em 24h
