@@ -327,7 +327,7 @@ function Cursos() {
 
         <div className="cursos-cta reveal" style={{ textAlign: "center", marginTop: "var(--sp-7)" }}>
           <a
-            href="https://wa.me/5521999999999?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20cursos%20e%20treinamentos"
+            href="https://wa.me/5521995365112?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20cursos%20e%20treinamentos"
             target="_blank"
             rel="noreferrer"
             className="btn btn-primary no-underline"
