@@ -77,7 +77,7 @@ function FinalCTA() {
           O atendimento é presencial na nossa clínica, o que significa vagas reais, com limite real.
           A conversa começa pelo WhatsApp. Sem formulário, sem burocracia. Você conta o que procura e a Luana te orienta sobre o melhor procedimento e a disponibilidade de agenda.
         </p>
-        <a href="https://wa.me/5521995365112?text=Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20procedimentos" target="_blank" rel="noreferrer" className="btn btn-wa-final no-underline">
+        <a href="https://wa.me/5521995365112?text=Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20procedimentos" target="_blank" rel="noreferrer" className="btn btn-wa-final no-underline" onClick={() => window.fbq && window.fbq('track', 'Contact')}>
           <WhatsAppIcon size={20} />
           Quero agendar um horário
         </a>
@@ -140,7 +140,7 @@ function SocialStrip() {
           <InstagramIcon />
           <span>@luanamacedomicro</span>
         </a>
-        <a href="https://wa.me/5521995365112?text=Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noreferrer" className="social-strip-link no-underline">
+        <a href="https://wa.me/5521995365112?text=Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noreferrer" className="social-strip-link no-underline" onClick={() => window.fbq && window.fbq('track', 'Contact')}>
           <WhatsAppIcon />
           <span>WhatsApp</span>
         </a>
@@ -176,7 +176,7 @@ function Footer() {
               <a href="https://instagram.com/luanamacedomicro" target="_blank" rel="noreferrer">
                 <InstagramIcon /> @luanamacedomicro
               </a>
-              <a href="https://wa.me/5521995365112?text=Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20procedimentos" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/5521995365112?text=Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20procedimentos" target="_blank" rel="noreferrer" onClick={() => window.fbq && window.fbq('track', 'Contact')}>
                 <WhatsAppIcon /> WhatsApp · Resposta em 24h
               </a>
             </div>
@@ -251,7 +251,8 @@ function WhatsAppFAB() {
       target="_blank"
       rel="noreferrer"
       className="wa-fab no-underline"
-      aria-label="Falar no WhatsApp">
+      aria-label="Falar no WhatsApp"
+      onClick={() => window.fbq && window.fbq('track', 'Contact')}>
       
       <WhatsAppIcon size={26} />
     </a>);
