@@ -332,8 +332,8 @@ function Cursos() {
             rel="noreferrer"
             className="btn btn-primary no-underline"
             style={{ fontSize: 14, padding: "16px 36px" }}
-            onClick={() => window.fbq && window.fbq('track', 'Contact')}
-            
+            onClick={() => window.fbq && window.fbq('track', 'Contact')}>
+
             Quero saber mais sobre cursos e treinamentos
           </a>
         </div>
